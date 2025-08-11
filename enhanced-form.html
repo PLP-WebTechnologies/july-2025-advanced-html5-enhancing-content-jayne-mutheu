@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Form</title>
+
+</head>
+<body>
+
+  <header>
+    <h1>User Registration Portal</h1>
+  </header>
+
+  <main>
+    <section aria-labelledby="form-section">
+      <h2 id="form-section">Registration Form</h2>
+      <form action="/submit" method="POST" autocomplete="on">
+        
+        <div class="form-group">
+          <label for="fullname">Full Name *</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password *</label>
+          <input type="password" id="password" name="password" minlength="6" required />
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth *</label>
+          <input type="date" id="dob" name="dob" required />
+        </div>
+
+        <div class="form-group">
+          <label>Gender *</label>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country *</label>
+          <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+            <option value="au">Australia</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="bio">Short Bio</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="resume">Upload Resume (PDF only)</label>
+          <input type="file" id="resume" name="resume" accept=".pdf" />
+        </div>
+
+        <div class="form-group">
+          <label for="website">Website</label>
+          <input type="url" id="website" name="website" placeholder="https://example.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="refcode">Referral Code</label>
+          <input type="text" id="refcode" name="refcode" value="N/A" readonly />
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="agree" name="agree" required />
+          <label for="agree">I agree to the terms and conditions *</label>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Register</button>
+        </div>
+
+      </form>
+    </section>
+
+    <section aria-labelledby="info-section">
+      <h2 id="info-section">Why Join Us?</h2>
+      <ul>
+        <li>Access exclusive content and tutorials</li>
+        <li>Join a thriving tech community</li>
+        <li>Participate in coding challenges and events</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="pricing-section">
+      <h2 id="pricing-section">Pricing Plans</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Monthly</th>
+            <th>Annual</th>
+            <th>Benefits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Free</td>
+            <td>$0</td>
+            <td>$0</td>
+            <td>Basic Access</td>
+          </tr>
+          <tr>
+            <td>Pro</td>
+            <td>$10</td>
+            <td>$100</td>
+            <td>Advanced Courses, Certificate</td>
+          </tr>
+          <tr>
+            <td>Enterprise</td>
+            <td>$50</td>
+            <td>$500</td>
+            <td>Team Access, Dedicated Support</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="media-section">
+      <h2 id="media-section">Media Preview</h2>
+      <img src="image.png" alt="image" />
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <audio src="audio.mp3" controls></audio>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form</p>
+  </footer>
+
+</body>
+</html>
